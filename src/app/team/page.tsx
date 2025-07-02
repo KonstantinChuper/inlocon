@@ -89,7 +89,6 @@ export default function TeamPage() {
             </a>
           </section>
 
-          {/* Kontakt Sektion */}
           <section className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-6 border border-gray-200">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">📞 Kontakt</h2>
             <div className="space-y-3">
