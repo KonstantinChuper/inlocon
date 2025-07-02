@@ -11,6 +11,15 @@ import {
 import { Button } from '@/components/ui/button'
 import { CalendarIcon, ArrowLeft, ArrowRight, ArrowRightIcon } from 'lucide-react'
 
+interface CarouselApi {
+  canScrollPrev(): boolean
+  canScrollNext(): boolean
+  scrollPrev(): void
+  scrollNext(): void
+  on(event: string, callback: () => void): void
+  off(event: string, callback: () => void): void
+}
+
 const blogPostsData = [
   {
     id: 1,
@@ -55,7 +64,7 @@ const blogPostsData = [
 ]
 
 export default function BlogSection() {
-  const [api, setApi] = useState<any>(null)
+  const [api, setApi] = useState<CarouselApi | null>(null)
   const [canScrollPrev, setCanScrollPrev] = useState(false)
   const [canScrollNext, setCanScrollNext] = useState(false)
   const [imageError, setImageError] = useState<Record<number, boolean>>({})

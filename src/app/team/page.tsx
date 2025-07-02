@@ -70,7 +70,7 @@ export default function TeamPage() {
 
           <footer className="text-center mt-12 p-6 border-t border-gray-200">
             <p className="text-gray-600 italic">
-              "Eine effektive Landingpage verbindet Information mit Aktion"
+              &ldquo;Eine effektive Landingpage verbindet Information mit Aktion&rdquo;
             </p>
           </footer>
         </div>
