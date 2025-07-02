@@ -13,29 +13,29 @@ export default function Header() {
             <Image src={logo} alt="Logo" width={120} height={100} />
             <nav className="flex gap-4 text-xl text-primary">
               <li>
-                <a href="/" className="hover:underline underline-offset-4">
+                <Link href="/" className="hover:underline underline-offset-4">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline underline-offset-4">
+                <Link href="/about" className="hover:underline underline-offset-4">
                   Über uns
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline underline-offset-4">
+                <Link href="/blog" className="hover:underline underline-offset-4">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline underline-offset-4">
+                <Link href="/contact" className="hover:underline underline-offset-4">
                   Kontakt
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline underline-offset-4">
+                <Link href="/portale" className="hover:underline underline-offset-4">
                   Portale
-                </a>
+                </Link>
               </li>
             </nav>
           </div>

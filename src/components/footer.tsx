@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react'
 import logo from '@/assets/logo.png'
 

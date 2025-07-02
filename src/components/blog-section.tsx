@@ -10,7 +10,6 @@ import {
 } from '@/components/ui/carousel'
 import { Button } from '@/components/ui/button'
 import { CalendarIcon, ArrowLeft, ArrowRight, ArrowRightIcon } from 'lucide-react'
-import Image from 'next/image'
 
 const blogPostsData = [
   {
