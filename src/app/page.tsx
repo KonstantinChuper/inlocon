@@ -1,5 +1,6 @@
 import BlogSection from '@/components/blog-section'
 import ErlebenSection from '@/components/erleben-section'
+import Footer from '@/components/footer'
 import HeroSection from '@/components/hero-section'
 import PartnersSection from '@/components/partners-section'
 import StatsSection from '@/components/stats-section'
@@ -16,6 +17,7 @@ export default function Home() {
       <PartnersSection />
       <TestimonialsSection />
       <BlogSection />
+      <Footer />
     </main>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Github, Mail, Phone, ExternalLink } from 'lucide-react'
 
 export default function TeamPage() {
   return (
@@ -66,6 +67,59 @@ export default function TeamPage() {
               orientiert und eine Landingpage aufgebaut, die nicht nur informativ, sondern auch
               handlungsorientiert ist.
             </p>
+          </section>
+
+          <section className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm my-4">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+              <Github className="w-6 h-6 mr-2" />
+              GitHub Repository
+            </h2>
+            <p className="text-gray-700 mb-4">
+              Der vollständige Quellcode dieser Landingpage ist öffentlich auf GitHub verfügbar:
+            </p>
+            <a
+              href="https://github.com/KonstantinChuper/inlocon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+            >
+              <Github className="w-4 h-4 mr-2" />
+              Repository ansehen
+              <ExternalLink className="w-4 h-4 ml-2" />
+            </a>
+          </section>
+
+          {/* Kontakt Sektion */}
+          <section className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-6 border border-gray-200">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">📞 Kontakt</h2>
+            <div className="space-y-3">
+              <div className="flex items-center text-gray-700">
+                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-lg font-semibold text-primary">KC</span>
+                </div>
+                <div>
+                  <p className="font-semibold">Kostiantyn Chuper</p>
+                  <p className="text-sm text-gray-600">Frontend Developer</p>
+                </div>
+              </div>
+
+              <div className="flex items-center text-gray-700 ml-13">
+                <Mail className="w-4 h-4 mr-2 text-primary" />
+                <a
+                  href="mailto:konstantyn.chuper@gmail.com"
+                  className="hover:text-primary transition-colors"
+                >
+                  konstantyn.chuper@gmail.com
+                </a>
+              </div>
+
+              <div className="flex items-center text-gray-700 ml-13">
+                <Phone className="w-4 h-4 mr-2 text-primary" />
+                <a href="tel:+4916095002249" className="hover:text-primary transition-colors">
+                  +49 160 95002249
+                </a>
+              </div>
+            </div>
           </section>
 
           <footer className="text-center mt-12 p-6 border-t border-gray-200">

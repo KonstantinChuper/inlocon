@@ -64,7 +64,7 @@ const blogPostsData = [
 ]
 
 export default function BlogSection() {
-  const [api, setApi] = useState<CarouselApi | null>(null)
+  const [api, setApi] = useState<CarouselApi>()
   const [canScrollPrev, setCanScrollPrev] = useState(false)
   const [canScrollNext, setCanScrollNext] = useState(false)
   const [imageError, setImageError] = useState<Record<number, boolean>>({})
